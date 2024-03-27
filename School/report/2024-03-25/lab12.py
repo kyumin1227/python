@@ -4,17 +4,17 @@ def calculate_tax(income):
 
     # 10000달러 미만의 세금 계산
     if income > 0:
-        tax += min(1000, income / 10)
+        tax += min(1000, income * 0.1)
         income -= 10000
     
     # 10000달러 초과 20000달러 미만의 세금 계산
     if income > 0:
-        tax += min(1500, income * 15 / 100)
+        tax += min(1500, income * 0.15)
         income -= 10000
 
     # 나머지 금액의 세금 계산
     if income > 0:
-        tax += income / 5
+        tax += income * 0.2
 
     return tax
 

@@ -3,7 +3,7 @@ def reservation_check(age, event_code, reservation_date):
     success = "예약이 완료되었습니다!"
 
     # 입력값이 잘못된 경우 확인
-    if not reservation_date in [i for i in range(1, 31)] or not event_code ["E1", "E2", "E3"]:
+    if not reservation_date in [i for i in range(1, 31)] or not event_code in ["E1", "E2", "E3"]:
         return "잘못된 입력입니다. 프로그램을 종료합니다"
     
     # 이벤트 코드 확인

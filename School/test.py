@@ -97,13 +97,23 @@
 
 # print(numbers)
 
-a = int(input())
-list1 = list(map(int, input().split()))
-x = int(input())
-# count=0
+# a = int(input())
+# list1 = list(map(int, input().split()))
+# x = int(input())
+# # count=0
 
-# listaa = list(map(int,list1.split()))
-# for i in listaa:
-#     if i == x:
-#     	count += 1
-print(list1.count(x))
+# # listaa = list(map(int,list1.split()))
+# # for i in listaa:
+# #     if i == x:
+# #     	count += 1
+# print(list1.count(x))
+
+# print(chr(65))
+# print(ord('A'))
+
+s = "hello world"
+print(s.count('l'))  # 'l'의 개수
+print(s.find("world"))  # 'world'의 시작 인덱스
+print(s.split())  # 공백을 기준으로 문자열 분리
+print(len(s)) # 11
+print(s.replace("world", "kyumin"))

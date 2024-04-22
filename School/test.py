@@ -111,9 +111,17 @@
 # print(chr(65))
 # print(ord('A'))
 
-s = "hello world"
-print(s.count('l'))  # 'l'의 개수
-print(s.find("world"))  # 'world'의 시작 인덱스
-print(s.split())  # 공백을 기준으로 문자열 분리
-print(len(s)) # 11
-print(s.replace("world", "kyumin"))
+# s = "hello world"
+# print(s.count('l'))  # 'l'의 개수
+# print(s.find("world"))  # 'world'의 시작 인덱스
+# print(s.split())  # 공백을 기준으로 문자열 분리
+# print(len(s)) # 11
+# print(s.replace("world", "kyumin"))
+
+number = 0
+
+while number < 10:
+    print(number)
+    if number == 5:
+        continue
+    number += 1

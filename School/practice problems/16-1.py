@@ -31,6 +31,7 @@ def getStrikeAndBall(argList):
 
 computer_list = getComputerNumber()
 win = False
+strikeOut = 0
 
 for i in range(5):
     user_list = list(map(int, input(f"시도 {i + 1}: 입력한 숫자 - ").split()))
@@ -41,6 +42,12 @@ for i in range(5):
     
     if strike == 3:
         win = True
+        break
+
+    if out == 3:
+        strikeOut += 1
+
+    if strikeOut == 2:
         break
 
 if win:

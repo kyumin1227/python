@@ -9,3 +9,7 @@ myenv/
 # 다른 사람 코드
 *sa.py  
 *iron.py
+
+# 출력 결과 파일
+*.csv
+*.txt

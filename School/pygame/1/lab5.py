@@ -6,8 +6,8 @@ screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption("Simple Event Logger")
 running = True
 
-now_x = 0
-now_y = 0
+now_x = int(screen.get_width() / 2)
+now_y = int(screen.get_height() / 2)
 
 def draw_line(event_scancode):
     code = (79, 80, 81, 82)

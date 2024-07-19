@@ -1,5 +1,6 @@
 *.zip
 *.DS_Store
+__pycache__
 
 # python/나도 코딩 강의/1. 활용편 (pygame)/myenv/
 myenv/

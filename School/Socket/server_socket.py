@@ -13,6 +13,11 @@ server_socket.listen(5)
 
 # accept(), 사용자로부터 연결 요청을 받았을 때 새로운 소켓 생성
 # blocking 함수
-server_socket.accept()
+client_socket, client_address = server_socket.accept()
+while True:
+    recv_data = client_socket.recv(1024).decode("utf-8")
+    print(type(recv_data))
+    print(recv_data)
+    client_socket.sendall(recv_data.encode("utf-8"))
 
 print("Hello")
